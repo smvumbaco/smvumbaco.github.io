@@ -47,13 +47,36 @@
 							<section class="post">
 								<header class="major">
 									<h1>Capstone: SummitSignal</h1>
-									<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
-									facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
-									amet nullam sed etiam veroeros.</p>
+									<p>SummitSignal is a portable and lightweight SOS beacon and GPS data tracker 
+										I am currently developing for my senior-year Engineering Capstone project. 
+										SummitSignal is meant to be used by individuals who engage in any kind of 
+										outdoor activity that could take place outside of cell service such as backpacking
+										or sailing. This device is designed to use satellite tracking to record 
+										the user's location data and transmit that data to emergency services in case of an emergency.
+										Developing this module involves a broad spectrum of skills and techniques across 
+										Electrical and Computer Engineering including PCB design and bringup, writing and testing firmware, 
+										backend and frontend website development, and AWS integration.</p>
 								</header>
-								<div class="image main"><img src="images/pic01.jpg" alt="" /></div>
-								<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur sapien risus, commodo eget turpis at, elementum convallis enim turpis, lorem ipsum dolor sit amet nullam.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus. Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum.</p>
+								<div class="image main"><img src="images/summitsignal_chassis.png" alt="" /></div>
+								<p>Much of the hardware involved in this project revolves around the custom PCBA. 
+									This prototype is designed with 3 major sybsystems: power management, MCU 
+									control, and GNSS/Iridium communication. The schematic and initial footprint 
+									for this project are shown below.
+								</p>
+								<div class="image main"><img src="images/summitsignal_powermanagement.png" alt="" /></div>
+								<div class="image main"><img src="images/summitsignal_microcontroller.png" alt="" /></div>
+								<div class="image main"><img src="images/summitsignal_gnss.png" alt="" /></div>
+								<div class="image main"><img src="images/summitsignal_layout.png" alt="" /></div>
+								<p>The dataflow of the backend web development is shown below. The device operates in 2 
+									modes. The first mode, shown to the left, sends the user's location and other important 
+									information to emergency contacts via the Iridium satellite system and AWS services such 
+									as EC2 and SNS. The second mode passively records user location data and processes it using
+									AWS services such as Cognito and DynamoDB.
+								</p>
+								<div class="image main"><img src="images/summitsignal_dataflow.png" alt="" /></div>
+								<p>The firmware and frontend web development for this project are currently a 
+									work in progress. Stay tuned for more updates for SummitSignal!
+								</p>
 							</section>
 
 					</div>

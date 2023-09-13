@@ -4687,3 +4687,8 @@ input, select, textarea {
 		}
 
 	}
+
+	.picofme {
+		width:5vw;
+		height:auto;
+	}
