@@ -47,13 +47,35 @@
 							<section class="post">
 								<header class="major">
 									<h1>Analog Devices: LabVIEW Semiconductor Characterization Interface</h1>
-									<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
-									facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
-									amet nullam sed etiam veroeros.</p>
+									<p>At Analog Devices, I served as a Semiconductor Reliability Engineer, where I conducted stress tests on BJTs and MOSFET devices at 
+										the wafer and package levels. An important element of this procedure was characterizing the transistors before stressing to obtain
+										baseline pre-test data and ensure that no damage occurred in the development process. Given this requirement, I develped a LabVIEW 
+										program that interfaced with up to 4 National Instruments source measurement units (SMUs) to quickly bias and characterize 
+										semiconductor devices. 
+									</p>
 								</header>
-								<div class="image main"><img src="images/pic01.jpg" alt="" /></div>
-								<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur sapien risus, commodo eget turpis at, elementum convallis enim turpis, lorem ipsum dolor sit amet nullam.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus. Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum.</p>
+								<div class="image main"><img src="images/labview_mainpage.png" alt="" /></div>
+								<p>When setting up an experiment, users can specify how many SMUs they want to configure as well as what kind of experiment they would like to run.
+									Under a single point measurement, just 1 value is recorded. With a simple sweep, a basic plot is generated. With a sweep and step experment, 
+									multiple sweeps are plotted on the same graph under different biasing conditions. An example of a sweep and step experient would include the 
+									output characteristics of a MOSFET at different gate voltage biases. This setup process may be facilitated by importing a previously-used 
+									experiment, which auto-populates all the data in the UI. 
+								</p>
+								<div class="image main"><img src="images/labview_sourcesetup.png" alt="" /></div>
+								<p>After defining the experient, users can specify what they want each SMU to source (voltage or current) as well as which SMU is performing a 
+									sweep. Naming variables and constants is also available for maximum specification and customization. </p>
+								<div class="image main"><img src="images/labview_testsetup.png" alt="" /></div>
+								<p>Users can also determine the values of the sweep and constant values. The number of measurements is also articulated.</p>
+								<div class="image main"><img src="images/labview_displaysetup.png" alt="" /></div>
+								<p>The graph is entirely configurable as well.</p>
+								<div class="image main"><img src="images/labview_gummel.png" alt="" /></div>
+								<div class="image main"><img src="images/labview_output.png" alt="" /></div>
+								<p>Using the test setup articulated above, a simple plot may be configured such as the NPN Gummel plot or nMOS output characteristics
+									graph shown above. This process provides a very clear indication of the health of a transistor very quickly, and experiments 
+									may be run as many times as needed. Specific data may also be saved and stored in a simple, readable format with a single button 
+									press. Using this LabVIEW system, I was able to significantly reduce the time consumption and cost of characterizing transistors. 
+									Much like the Teledyne FLIR current board schematics, the specific code for this project is ADI proprietary information and may not 
+									be displayed, but the actual user interface implemented for this project is available and shown above!</p>
 							</section>
 
 					</div>
