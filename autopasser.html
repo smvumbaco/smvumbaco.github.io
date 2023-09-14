@@ -56,13 +56,30 @@
 										<a href="https://drive.google.com/file/d/16u4LkbLCnvXOiEsfbPAsV_Kt3ClEgtXj/view?usp=drive_link" target="_blank">AutoPasser Version 1</a>
 									</header>
 								</header>
-								<p>The first prototype is showcased in the video linked above. The success of this prototype warranted a second revision that 
-									greatly expanded on the design and capabilities of the original design.
+								<p>The first prototype is showcased in the video linked above. Pucks were loaded into parallel spinning tracks by a linear actuator, 
+									and Vex Robotics CIM motors were used to power the firing system itself. The UI and general system logic was governed by an Arduino
+									MEGA. The entire system was powered by a 120VAC to 12VDC AC/DC converter. While primitive, the success of this prototype warranted 
+									a second revision that greatly expanded on the design and capabilities of the original design.
 								</p>
-								<div class="image main"><img src="images/" alt="" /></div>
-								<p>Put Text Here.</p>
-								<div class="image main"><img src="images/pic01.png" alt="" /></div>
-								<p>Put Text Here.</p>
+								<div class="image main"><img src="images/autopasser_opened.jpg" alt="" /></div>
+								<div class="image main"><img src="images/autopasser_UI.jpg" alt="" /></div>
+								<p>The second iteration of the AutoPasser prototype is shown above. This design largely achieved its outlined goals of being smaller, 
+									lighter, and having increased capabilities. The CIM motors were swapped out with the more-efficient NEO motors, and the linear actuator
+									was replaced with a much smaller model. Using an ultrasonic sensor, dynamic puck detection was implemented to ensure the system 
+									always knew when it was out of pucks. Using ESP-32 microcontrollers, remote firing was added using Bluetooth to communicate between
+									a remote control and the main console. Individual and unique PCBAs were developed for this purpose and are shown below. Finally, the 
+									entire chassis was placed on a gear system controlled by a stepper motor, which allowed for pucks to be fired at different angles. 
+									The UI was also updated with a touch-screen and a simplified control scheme; all of which was maintained by a dedicated microcontroller
+									that communicated with the console-side ESP-32 via UART. The updated AutoPasser protoype also included an enhanced cable and wire 
+									management, a feature that was largely absent from teh first design.
+								</p>
+								<div class="image main"><img src="images/ap_bothPCBAs.jpg" alt="" /></div>
+								<div class="image main"><img src="images/ap_remotePCBA.jpg" alt="" /></div>
+								<div class="image main"><img src="images/ap_consolePCBA.jpg" alt="" /></div>
+								<p>Both iterations of AutoPasser were excellent exercises in good practices and safety procedures. Given that the firing system motors used
+									in these designs were extremely current-hungry, the addition of master-OFF switches and circuit breakers was mandatory for the safety 
+									of both the engineers and users. 
+								</p>
 							</section>
 
 					</div>
