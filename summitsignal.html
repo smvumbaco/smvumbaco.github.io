@@ -49,17 +49,17 @@
 									<h1>Capstone: SummitSignal</h1>
 									<p>SummitSignal is a portable and lightweight SOS beacon and GPS data tracker 
 										I am currently developing for my senior-year Engineering Capstone project. 
-										SummitSignal is meant to be used by individuals who engage in any kind of 
+										SummitSignal is targeted for individuals who engage in any kind of 
 										outdoor activity that could take place outside of cell service such as backpacking
 										or sailing. This device is designed to use satellite tracking to record 
 										the user's location data and transmit that data to emergency services in case of an emergency.
-										Developing this module involves a broad spectrum of skills and techniques across 
-										Electrical and Computer Engineering including PCB design and bringup, writing and testing firmware, 
-										backend and frontend website development, and AWS integration.</p>
+										In this project of six Electrical and Computer Engineering students, 
+										I collaborated on the circuit design process and I am currently responsible
+										for the backend development and AWS integration for our web application.</p>
 								</header>
 								<div class="image main"><img src="images/summitsignal_chassis.png" alt="" /></div>
 								<p>Much of the hardware involved in this project revolves around the custom PCBA. 
-									This prototype is designed with 3 major sybsystems: power management, MCU 
+									This prototype is designed with three major sybsystems: power management, MCU 
 									control, and GNSS/Iridium communication. The schematic and initial footprint 
 									for this project are shown below.
 								</p>
@@ -67,7 +67,7 @@
 								<div class="image main"><img src="images/summitsignal_microcontroller.png" alt="" /></div>
 								<div class="image main"><img src="images/summitsignal_gnss.png" alt="" /></div>
 								<div class="image main"><img src="images/summitsignal_layout.png" alt="" /></div>
-								<p>The dataflow of the backend web development is shown below. The device operates in 2 
+								<p>The dataflow of the backend web development is shown below. The device operates in two
 									modes. The first mode, shown to the left, sends the user's location and other important 
 									information to emergency contacts via the Iridium satellite system and AWS services such 
 									as EC2 and SNS. The second mode passively records user location data and processes it using
