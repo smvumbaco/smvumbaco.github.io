@@ -51,27 +51,31 @@
 										ocean farming of kelp. The system consists of a surface buoy and a 
 										submersible, depth-adjustable buoy connected by a tethering system. 
 										The system uses sensor readings of water temperature, salinity, pH,
-										UV levels, pressure, and nitrate levels to determine whether to raise or 
-										lower the farming platform to optimize plant growth. The design will 
-										incorporate custom PCBs and cables as well as extensive embedded development.
+										UV levels, and pressure to determine whether to raise or 
+										lower the farming platform to optimize plant growth. The design 
+										incorporates custom PCBs and cables as well as extensive embedded development.
 										On this team of four mechanical engineers and six electrical/computer engineers,
 										I am serving as the Electrical and Computer Engineering Technical Lead where I 
 										drive development, mentor the other EE/CEs, and facilitate important design decisions.</p>
 								</header>
-								<div class="image main"><img src="images/wavewise_kelpfarming.png" alt="" /></div>
-								<p>The surface buoy is responsible for power generation and will have a system of power 
-									switching between solar panels and a backup rechargeable battery. This buoy will 
-									communicate with the submersible buoy via a specialized cabling system. The submersible,
-									in turn, carries and interprets the data of several different sensors. It also will 
-									contain an air compressor that forces water in and out of the chassis to adjust the depth
-									of the buoy as needed.</p>
-								<div class="image main"><img src="images/wavewise_diagram.png" alt="" /></div>
+								<div class="image main"><img src="images/wavewise_diagram_v2.png" alt="" /></div>
+								<p>The surface buoy is responsible for power generation and includes a solar battery
+									charging system. Most of the power generation is required to power the stepper motor, 
+									which raises and lowers the kelp lines in the water. The buoy will 
+									communicate with the submersible via a specialized cabling system and the UART communication protocol. 
+									The submersible, in turn, carries and interprets the data of several different sensors before
+									sending the data to the buoy system, which stores this data on a microSD card. </p>
+								<div class="image main"><img src="images/wavewise_buoy_schematic.png" alt="" /></div>
+								<div class="image main"><img src="images/wavewise_buoy_layout.png" alt="" /></div>
+								<div class="image main"><img src="images/wavewise_submersible_schematic.png" alt="" /></div>
+								<div class="image main"><img src="images/wavewise_buoy_layout.png" alt="" /></div>
 								<p>WaveWise is curretly in the development phase and additional details will be added as the
 									team progresses through the life cycle of the project. I am currently overseeing a group 
 									of five Electrical and Computer
 									Engineers, as I am serving as my team's ECE Technical Lead. I am responsible for 
 									developing the system as well as delegating work and serving as the final say in 
 									design and purchase decisions.</p>
+								<div class="image main"><img src="images/wavewise_submersible_step.png" alt="" /></div>
 							</section>
 
 					</div>
