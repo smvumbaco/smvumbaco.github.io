@@ -27,9 +27,10 @@
 						<ul class="links">
 							<li><a href="index.html">Projects</a></li>
 							<li><a href="about_me.html">About Me</a></li>
-							<li class="active"><a href="summitsignal.html">SummitSignal</a></li>
+							<li class="active"><a href="summitsignal.html">Capstone</a></li>
 							<li><a href="wavewise.html">WaveWise</a></li>
 							<li><a href="autopasser.html">AutoPasser</a></li>
+							<li><a href="emerald.html">Emerald</a></li>
 							<li><a href="currentboard.html">5mASource</a></li>
 							<li><a href="labviewproject.html">LabVIEWUI</a></li>
 						</ul>
@@ -48,14 +49,14 @@
 								<header class="major">
 									<h1>Capstone: SummitSignal</h1>
 									<p>SummitSignal is a portable and lightweight SOS beacon and GPS data tracker 
-										I am currently developing for my senior-year Engineering Capstone project. 
+										I developed as a member of a six-student team for our Engineering Capstone project. 
 										SummitSignal is targeted for individuals who engage in any kind of 
-										outdoor activity that could take place outside of cell service such as backpacking
-										or sailing. This device is designed to use satellite tracking to record 
+										outdoor activity that could take place outside of cell service such as hiking
+										or sailing. This device utilizes satellite tracking to record 
 										the user's location data and transmit that data to emergency services in case of an emergency.
-										In this project of six Electrical and Computer Engineering students, 
-										I collaborated on the circuit design process and I am currently responsible
-										for the backend development and AWS integration for our web application.</p>
+										For this project, 
+										I collaborated on the circuit design process and was chiefly responsible
+										for the backend development and AWS integration of our web application.</p>
 								</header>
 								<div class="image main"><img src="images/summitsignal_chassis.png" alt="" /></div>
 								<p>Much of the hardware involved in this project revolves around the custom PCBA. 
@@ -63,20 +64,30 @@
 									control, and GNSS/Iridium communication. The schematic and initial footprint 
 									for this project are shown below.
 								</p>
-								<div class="image main"><img src="images/summitsignal_powermanagement.png" alt="" /></div>
-								<div class="image main"><img src="images/summitsignal_microcontroller.png" alt="" /></div>
-								<div class="image main"><img src="images/summitsignal_gnss.png" alt="" /></div>
-								<div class="image main"><img src="images/summitsignal_layout.png" alt="" /></div>
+								<div class="image main"><img src="images/PowerManagement.png" alt="" /></div>
+								<div class="image main"><img src="images/Teensy&IC.png" alt="" /></div>
+								<div class="image main"><img src="images/Communication.png" alt="" /></div>
+								<p>Due to budget constraints, this board was hand-soldered, so ICs such as the Teensy 4.1 MCU and the 
+									IMU were connected to the PCB via development boards. Still, the module was designed 
+									to be user-friendly and roughly the size of an iPhone. Transmitting data through satellite 
+									communication was made possible by the external RockBLOCK module, while receiving coordinate
+									data was possible through the integrated GNSS antenna on the board. 
+								</p>
+								<div class="image main"><img src="images/Board.png" alt="" /></div>
 								<p>The dataflow of the backend web development is shown below. The device operates in two
 									modes. The first mode, shown to the left, sends the user's location and other important 
 									information to emergency contacts via the Iridium satellite system and AWS services such 
 									as EC2 and SNS. The second mode passively records user location data and processes it using
-									AWS services such as Cognito and DynamoDB.
+									AWS services such as Cognito and DynamoDB. This tracking mode was added so the user can 
+									view information about their outdoor excursions later on. 
 								</p>
 								<div class="image main"><img src="images/summitsignal_dataflow.png" alt="" /></div>
-								<p>The firmware and frontend web development for this project are currently a 
-									work in progress. Stay tuned for more updates for SummitSignal!
+								<p>A full walkthrough of using this device and the associated website is linked below:
 								</p>
+								<header class="major">
+									<a href="https://drive.google.com/file/d/1-6sxoGViQ98TTXyeJslK0FS1agsf2tg3/view?usp=sharing" target="_blank">SummitSignal Demonstration</a>
+								</header>
+								
 							</section>
 
 					</div>

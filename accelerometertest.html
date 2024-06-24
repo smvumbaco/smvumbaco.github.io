@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Teledyne FLIR: 5mA Constant Current Board</title>
+		<title>Emerald Innovations: Accelerometer Evaluation Assembly</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -27,12 +27,11 @@
 						<ul class="links">
 							<li><a href="index.html">Projects</a></li>
 							<li><a href="about_me.html">About Me</a></li>
-							<li><a href="summitsignal.html">Capstone</a></li>
-							<li><a href="wavewise.html">WaveWise</a></li>
-							<li><a href="autopasser.html">AutoPasser</a></li>
 							<li><a href="emerald.html">Emerald</a></li>
-							<li class="active"><a href="currentboard.html">5mASource</a></li>
-							<li><a href="labviewproject.html">LabVIEWUI</a></li>
+							<li class="active"><a href="accelerometertest.html">TestBox</a></li>
+							<li><a href="cameraboard.html">CameraPCB</a></li>
+							<li><a href="sensorboard.html">SensorPCB</a></li>
+							<li><a href="carrierboard.html">CarrierPCB</a></li>	
 						</ul>
 						<ul class="icons">
 							<li><a href="https://www.linkedin.com/in/sean-vumbaco-b53b66202/" class="icon brands fa-linkedin"><span class="label">fa-linkedin</span></a></li>
@@ -47,21 +46,19 @@
 						<!-- Post -->
 							<section class="post">
 								<header class="major">
-									<h1>Teledyne FLIR: 5mA Constant Current Board</h1>
-									<p>At Teledyne FLIR, I worked in a Systems Engineering role where I mainly evaluated the integration of new hardware into 
-										robotic systems such as PackBot, MTRS, and SUGV. As a part of this effort, I completed the schematic, layout, assembly,
-										and evaluation of 10 custom PCBAs that served as constant current sources used to evaluate the health of robots' electronics.
+									<h1>Emerald Innovations: Accelerometer Evaluation Assembly</h1>
+									<p>One of my major projects at Emerald was designing a system that could evaluate accelerometers
+										on the basis of several criteria including acceleormeter data accuracy, gyroscope data accuracy, 
+										magnetometer data accuracy, battery longevity, and Bluetooth signal integrity. In order to accomplish 
+										this, I used SolidWorks to design and 3D print a mount that would generate meaningful data for the 
+										accelerometer, gyroscope, and magnetometer on all 3 axes (x, y, and z). Securing the mount on a rotating 
+										platform, I then programmed a Jetson Nano to connect to accelerometers on the platform, collect data for 
+										an extended period of time, evaluate the data aginst failure criteria, and indicate to the user whether 
+										each device passed or failed through an RGY LED. I placed the whole system inside a metal box to avoid RF interference from 
+										other Bluetooth and Wifi devices, and I simplified the wiring between the Jetson, the rotating plate, and the LED 
+										by creating a custom PCB which was mounted inside. This greatly improved the integrity of studies involving 
+										accelerometers because it gave us a good impression of the functionality of each device before they were used in the field. 
 									</p>
-								</header>
-								<div class="image main"><img src="images/currentboard_layout.jpg" alt="" /></div>
-								<p>For this project, I was responsible for both component selection and board design. I completed both the schematic and layout designs in 
-									KiCad before generating the necessary gerber files to get the boards fabricated. Upon receiving the required parts, I soldered each 
-									component to the PCBAs and tested every board, resulting in 10 simple system evaluation tools that could be easily reproduced and 
-									repurposed for additional electronic applications. 
-								</p>
-								<div class="image main"><img src="images/currentboard_naked.jpg" alt="" /></div>
-								<p>While many of the specific components and the schametic file for this project are Teledyne FLIR proprietary information, I can display
-									the physical properties of the board, which are shown above!</p>
 							</section>
 
 					</div>
