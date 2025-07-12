@@ -2588,93 +2588,95 @@ input, select, textarea {
 
 /* Image */
 
-	.image {
-		border: 0;
-		display: inline-block;
-		position: relative;
-	}
+.image {
+    border: 0;
+    display: inline-block;
+    position: relative;
+    margin: 0 auto; /* Center horizontally */
+    text-align: center; /* Ensure child elements are centered */
+}
 
-		.image img {
-			display: block;
-		}
+.image img {
+    display: block;
+    margin: 0 auto; /* Center the image within the .image container */
+}
 
-		.image.left, .image.right {
-			max-width: 40%;
-		}
+.image.left, .image.right {
+    max-width: 40%;
+}
 
-			.image.left img, .image.right img {
-				width: 100%;
-			}
+.image.left img, .image.right img {
+    width: 100%;
+}
 
-		.image.left {
-			float: left;
-			margin: 0 2rem 2rem 0;
-			top: 0.75rem;
-		}
+.image.left {
+    float: left;
+    margin: 0 2rem 2rem 0;
+    top: 0.75rem;
+}
 
-		.image.right {
-			float: right;
-			margin: 0 0 2rem 2rem;
-			top: 0.75rem;
-		}
+.image.right {
+    float: right;
+    margin: 0 0 2rem 2rem;
+    top: 0.75rem;
+}
 
-		.image.fit {
-			display: block;
-			margin: 2.5rem 0;
-			width: 100%;
-		}
+.image.fit {
+    display: block;
+    margin: 2.5rem auto; /* Center horizontally */
+    width: 100%;
+}
 
-			.image.fit:first-child {
-				margin-top: 0;
-			}
+.image.fit:first-child {
+    margin-top: 0;
+}
 
-			.image.fit img {
-				width: 100%;
-			}
+.image.fit img {
+    width: 100%;
+}
 
-		.image.main {
-			display: block;
-			margin: 4rem 0;
-			width: 100%;
-		}
+.image.main {
+    display: block;
+    margin: 4rem auto; /* Center horizontally */
+    width: 75%;
+}
 
-			.image.main:first-child {
-				margin-top: 0;
-			}
+.image.main:first-child {
+    margin-top: 0;
+}
 
-			.image.main img {
-				width: 100%;
-			}
+.image.main img {
+    width: 100%;
+}
 
-		@media screen and (max-width: 736px) {
+@media screen and (max-width: 736px) {
+    .image.fit {
+        margin: 2rem auto; /* Center horizontally */
+    }
 
-			.image.fit {
-				margin: 2rem 0;
-			}
+    .image.main {
+        margin: 2rem auto; /* Center horizontally */
+    }
+}
 
-			.image.main {
-				margin: 2rem 0;
-			}
+a.image {
+    overflow: hidden;
+}
 
-		}
+a.image img {
+    -moz-transition: -moz-transform 0.2s ease-out;
+    -webkit-transition: -webkit-transform 0.2s ease-out;
+    -ms-transition: -ms-transform 0.2s ease-out;
+    transition: transform 0.2s ease-out;
+}
 
-	a.image {
-		overflow: hidden;
-	}
+a.image:hover img {
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
 
-		a.image img {
-			-moz-transition: -moz-transform 0.2s ease-out;
-			-webkit-transition: -webkit-transform 0.2s ease-out;
-			-ms-transition: -ms-transform 0.2s ease-out;
-			transition: transform 0.2s ease-out;
-		}
-
-		a.image:hover img {
-			-moz-transform: scale(1.05);
-			-webkit-transform: scale(1.05);
-			-ms-transform: scale(1.05);
-			transform: scale(1.05);
-		}
 
 /* Actions */
 
@@ -3623,7 +3625,7 @@ input, select, textarea {
 		padding: 0 2rem 0 0;
 		position: relative;
 		width: calc(100% - 4rem);
-		max-width: 72rem;
+		max-width: 77rem;
 		z-index: 2;
 	}
 
@@ -3760,7 +3762,7 @@ input, select, textarea {
 		position: relative;
 		margin: 0 auto;
 		width: calc(100% - 4rem);
-		max-width: 72rem;
+		max-width: 77rem;
 		z-index: 2;
 	}
 
@@ -3959,7 +3961,7 @@ input, select, textarea {
 		position: relative;
 		margin: 0 auto;
 		width: calc(100% - 4rem);
-		max-width: 72rem;
+		max-width: 77rem;
 		z-index: 2;
 	}
 
