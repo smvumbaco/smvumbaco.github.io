@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Capstone: SummitSignal</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Sean Vumbaco</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Projects</a></li>
+							<li><a href="about_me.html">About Me</a></li>
+							<li class="active"><a href="summitsignal.html">Capstone</a></li>
+							<li><a href="wavewise.html">WaveWise</a></li>
+							<li><a href="autopasser.html">AutoPasser</a></li>
+							<li><a href="emerald.html">Emerald</a></li>
+							<li><a href="currentboard.html">5mASource</a></li>
+							<li><a href="labviewproject.html">LabVIEWUI</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/sean-vumbaco-b53b66202/" class="icon brands fa-linkedin"><span class="label">fa-linkedin</span></a></li>
+							<li><a href="https://github.com/smvumbaco" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.instagram.com/vumbaco_sean/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Capstone: SummitSignal</h1>
+									<p>SummitSignal is a portable and lightweight SOS beacon and GPS data tracker 
+										I developed as a member of a six-student team for our Engineering Capstone project. 
+										SummitSignal is targeted for individuals who engage in any kind of 
+										outdoor activity that could take place outside of cell service such as hiking
+										or sailing. This device utilizes satellite tracking to record 
+										the user's location data and transmit that data to emergency services in case of an emergency.
+										For this project, 
+										I collaborated on the circuit design process and was chiefly responsible
+										for the backend development and AWS integration of our web application.</p>
+								</header>
+								<div class="image main"><img src="images/summitsignal_chassis.png" alt="" /></div>
+								<p>Much of the hardware involved in this project revolves around the custom PCBA. 
+									This prototype is designed with three major sybsystems: power management, MCU 
+									control, and GNSS/Iridium communication. The schematic and initial footprint 
+									for this project are shown below.
+								</p>
+								<div class="image main"><img src="images/PowerManagement.png" alt="" /></div>
+								<div class="image main"><img src="images/Teensy&IC.png" alt="" /></div>
+								<div class="image main"><img src="images/Communication.png" alt="" /></div>
+								<p>Due to budget constraints, this board was hand-soldered, so ICs such as the Teensy 4.1 MCU and the 
+									IMU were connected to the PCB via development boards. Still, the module was designed 
+									to be user-friendly and roughly the size of an iPhone. Transmitting data through satellite 
+									communication was made possible by the external RockBLOCK module, while receiving coordinate
+									data was possible through the integrated GNSS antenna on the board. 
+								</p>
+								<div class="image main"><img src="images/Board.png" alt="" /></div>
+								<p>The dataflow of the backend web development is shown below. The device operates in two
+									modes. The first mode, shown to the left, sends the user's location and other important 
+									information to emergency contacts via the Iridium satellite system and AWS services such 
+									as EC2 and SNS. The second mode passively records user location data and processes it using
+									AWS services such as Cognito and DynamoDB. This tracking mode was added so the user can 
+									view information about their outdoor excursions later on. 
+								</p>
+								<div class="image main"><img src="images/summitsignal_dataflow.png" alt="" /></div>
+								<p>A full walkthrough of using this device and the associated website is linked below:
+								</p>
+								<header class="major">
+									<a href="https://drive.google.com/file/d/1-6sxoGViQ98TTXyeJslK0FS1agsf2tg3/view?usp=sharing" target="_blank">SummitSignal Demonstration</a>
+								</header>
+								
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>833 Beacon Street #506<br />
+								Boston, MA 02215</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">(978) 476-6877</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">vumbaco.s@northeastern.edu</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://www.linkedin.com/in/sean-vumbaco-b53b66202/" class="icon brands alt fa-linkedin"><span class="label">linkedin</span></a></li>
+									<li><a href="https://github.com/smvumbaco" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://www.instagram.com/vumbaco_sean/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
