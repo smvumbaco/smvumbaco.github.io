@@ -26,12 +26,15 @@
 					<nav id="nav">
 						<ul class="links">
 							<li><a href="index.html">Projects</a></li>
-							<li><a href="about_me.html">About Me</a></li>
+							<!-- <li><a href="about_me.html">About Me</a></li> -->
 							<li><a href="emerald.html">Emerald</a></li>
 							<li class="active"><a href="accelerometertest.html">TestBox</a></li>
 							<li><a href="cameraboard.html">CameraPCB</a></li>
-							<li><a href="sensorboard.html">SensorPCB</a></li>
 							<li><a href="carrierboard.html">CarrierPCB</a></li>	
+							<li><a href="sensorboard.html">SensorPCB</a></li>
+							<li><a href="devicetest.html">RF Test</a></li>	
+							<li><a href="noisefft.html">Noise FFT</a></li>	
+							<li><a href="deviceassembly.html">Assembly</a></li>	
 						</ul>
 						<ul class="icons">
 							<li><a href="https://www.linkedin.com/in/sean-vumbaco-b53b66202/" class="icon brands fa-linkedin"><span class="label">fa-linkedin</span></a></li>
@@ -51,14 +54,21 @@
 										on the basis of several criteria including acceleormeter data accuracy, gyroscope data accuracy, 
 										magnetometer data accuracy, battery longevity, and Bluetooth signal integrity. In order to accomplish 
 										this, I used SolidWorks to design and 3D print a mount that would generate meaningful data for the 
-										accelerometer, gyroscope, and magnetometer on all 3 axes (x, y, and z). Securing the mount on a rotating 
+										accelerometer, gyroscope, and magnetometer on all 3 axes (x, y, and z). 
+									</p>	
+									<div class="image main"><img src="images/accelerometer_test_mount.jpg" alt="" /></div>
+									<p>Securing the mount on a rotating 
 										platform, I then programmed a Jetson Nano to connect to accelerometers on the platform, collect data for 
 										an extended period of time, evaluate the data aginst failure criteria, and indicate to the user whether 
-										each device passed or failed through an RGY LED. I placed the whole system inside a metal box to avoid RF interference from 
-										other Bluetooth and Wifi devices, and I simplified the wiring between the Jetson, the rotating plate, and the LED 
-										by creating a custom PCB which was mounted inside. This greatly improved the integrity of studies involving 
-										accelerometers because it gave us a good impression of the functionality of each device before they were used in the field. 
+										each device passed or failed through an RGY LED. The whole system was placed inside a metal box to avoid RF interference from 
+										other Bluetooth and Wifi devices.
 									</p>
+									<div class="image main"><img src="images/accelerometer_test_box.jpg" alt="" /></div>
+									<p>To simplify the wiring between the Jetson, the rotating plate, and the LED, I  
+										created a custom PCB which was mounted inside. This greatly improved the integrity of studies involving 
+										accelerometers because it gave a good impression of the functionality of each device before they were used in the field. 
+									</p>
+									<div class="image main"><img src="images/accelerometer_test_pcb.jpg" alt="" /></div>
 							</section>
 
 					</div>
@@ -68,8 +78,7 @@
 						<section class="split contact">
 							<section class="alt">
 								<h3>Address</h3>
-								<p>833 Beacon Street #506<br />
-								Boston, MA 02215</p>
+								<p>Andover, MA</p>
 							</section>
 							<section>
 								<h3>Phone</h3>
@@ -77,7 +86,7 @@
 							</section>
 							<section>
 								<h3>Email</h3>
-								<p><a href="#">vumbaco.s@northeastern.edu</a></p>
+								<p><a href="#">smvumbaco@gmail.com</a></p>
 							</section>
 							<section>
 								<h3>Social</h3>
