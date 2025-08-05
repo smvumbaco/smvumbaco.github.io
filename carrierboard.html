@@ -50,11 +50,18 @@
 							<section class="post">
 								<header class="major">
 									<h1>Emerald Innovations: Jetson TX2 Carrier Board</h1>
-									<p>A critical part of the system I was working on was the carrier board for the Jetson TX2 MCU. This large, complicated 
+									<p>A critical part of the system I was working on was the custom carrier board for the Jetson TX2 SoM. This large, complicated 
 										board with hundreds of components was a primary focus during my time at Emerald; I added subsystems and improved existing ones after rigorous 
-										testing and evaluation. I also updated the layout of this board, taking care to ensure that noise was mitigated and 
-										sensitive signals such as differential pairs were routed correctly and efficiently. After my work on this board, it was ordered 
-										to be used in all products going forward. 
+										testing and evaluation. Most notably, I developed all the supporting I2C firmware for an accelerometer IC that was used to report 
+										and log significant movement that could have caused potential damage to the system. Used a Microchip PIC microcontroller coded in C to 
+										accomplish this. This simple task proved challenging, as data was not being exchanged correctly despite no syntax or semantic errors in my program. 
+										After hooking up an oscilloscope to count the bits and compare with the accelerometer datasheet, I realized the reset condition was not triggering 
+										appropriately, and I was able to fix the problem by inserting manual delays into my code to line up with the expected delays in the PIC's I2C 
+										datasheet. 
+									</p>
+									<p>	I also updated the layout of the TX2 carrier board, taking 
+										care to ensure that noise was mitigated and sensitive signals such as differential pairs were routed correctly and efficiently across all 8 layers. 
+										After my work on this board, it was ordered to be used in all products going forward. 
 									</p>
 									<div class="image main"><img src="images/jetson_tx2_carrier_board.jpg" alt="" /></div>
 								</header>
